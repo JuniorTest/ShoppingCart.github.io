@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Demo Shopping Cart</title>
+	<link rel="stylesheet" href="vendor/css/bootstrap.min.css">
+	<link rel="stylesheet" href="vendor/css/main.css">
+</head>
+<body>
+	
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6">
+				<div class="card">
+					<div class="card-header bg-primary">
+						<h2 class="title">Shopping Cart</h2>
+					</div>
+					<div class="card-body">
+						<section class="products">
+							<img src="images/hoacuc.jpg" alt="" class="products__images">
+							<div class="products__infor">
+								<a class="add-cart" data-name="Hoa Cúc" data-price="20.000" href="#link">Hoa Cúc</a><br>
+								<span>price: 20.000 VNĐ</span>
+							</div>
+							<div class="products__control">
+								<button class="products__control--btn" type="button">+</button>
+								<button class="products__control--btn" type="button">-</button>
+							</div>
+							<div class="clear"></div>
+						</section>
+						<section class="products">
+							<img src="images/hoahue.jpg" alt="" class="products__images">
+							<div class="products__infor">
+								<a class="add-cart" data-name="Hoa Huệ" data-price="30.000" href="#link">Hoa Huệ</a><br>
+								<span>price: 30.000 VNĐ</span>
+							</div>
+							<div class="products__control">
+								<button class="products__control--btn" type="button">+</button>
+								<button class="products__control--btn" type="button">-</button>
+							</div>
+							<div class="clear"></div>
+						</section>
+						<section class="products">
+							<img src="images/hoalan.jpg" alt="" class="products__images">
+							<div class="products__infor">
+								<a class="add-cart" data-name="Hoa Lan" data-price="25.000" href="#link">Hoa Lan</a><br>
+								<span>price: 25.000 VNĐ</span>
+							</div>
+							<div class="products__control">
+								<button class="products__control--btn" type="button">+</button>
+								<button class="products__control--btn" type="button">-</button>
+							</div>
+							<div class="clear"></div>
+						</section>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="card">
+					<div class="card-header">
+						<h2 class="title">Products</h2>
+					</div>
+					<div class="card-body">
+						<table class="table table-bordered text-center">
+							<thead>
+								<tr>
+									<th>Name</th>
+									<th>Price</th>
+									<th>Count</th>
+								</tr>
+							</thead>
+							<tbody id="show-products">							
+							</tbody>
+						</table>
+					</div>
+					<div class="card-footer">
+						<h2 class="total" id="totalPriceProducts">Total Price: 0$</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- <script src="vendor/js/jquery-3.3.1.slim.min.js"></script>
+	<script src="vendor/js/popper.min.js"></script>
+	<script src="vendor/js/bootstrap.min.js"></script> -->
+	<script src="vendor/js/_main.js"></script>
+</body>
+</html>
